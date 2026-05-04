@@ -22,3 +22,6 @@ jobs:
 
     - name: Compilar Proyecto (Build)
       run: dotnet build APISeguridad/APISeguridad.csproj --no-restore --configuration Release
+
+    - name: Ejecutar Pruebas (Test)
+      run: dotnet test --no-build --verbosity normal
