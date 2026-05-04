@@ -1,0 +1,27 @@
+name: Pipeline de Integración Continua .NET
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Descargar código
+      uses: actions/checkout@v4
+
+    - name: Configurar .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Restaurar dependencias
+      run: dotnet restore APISeguridad/APISeguridad.csproj
+
+    - name: Compilar Proyecto (Build)
+      run: dotnet build APISeguridad/APISeguridad.csproj --no-restore --configuration Release
+
+    - name: Ejecutar Pruebas (Test)
+      run: dotnet test --no-build --verbosity normal
