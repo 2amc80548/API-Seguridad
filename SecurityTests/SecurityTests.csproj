@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\APISeguridad\APISeguridad.csproj" />
+    <ProjectReference Include="..\ProjectMod1DevOps\ProjectMod1DevOps.csproj" />
   </ItemGroup>
 
 </Project>
