@@ -1,4 +1,4 @@
-﻿namespace APISeguridad.Utils;
+﻿namespace ProjectMod1DevOps.Utils;
 
 public class PasswordValidator
 {

@@ -1,8 +1,13 @@
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APISeguridad", "APISeguridad\APISeguridad.csproj", "{9840B1F1-4D0D-F059-41B9-4BA9DA9E76C8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectMod1DevOps", "ProjectMod1DevOps\ProjectMod1DevOps.csproj", "{9840B1F1-4D0D-F059-41B9-4BA9DA9E76C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EE00401B-B1C7-4B31-BA0A-93B4268F9961}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
